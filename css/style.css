@@ -6,7 +6,7 @@
 @font-face {
     font-family: 'Protest';
     src: url('../fonts/Protest Demo.otf') format('opentype'),
-         url('../fonts/Protest Demo.ttf') format('truetype');
+        url('../fonts/Protest Demo.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

@@ -5,15 +5,19 @@ const nomeDetalhe = document.querySelector('#detalhe-nome');
 const cargoDetalhe = document.querySelector('#detalhe-cargo');
 const rmDetalhe = document.querySelector('#detalhe-rm');
 const descricaoDetalhe = document.querySelector('#detalhe-descricao');
+const turmaDetalhe = document.querySelector('#detalhe-turma');
+const linksDetalhe = document.querySelector('#detalhe-links');
 
 function mostrarIntegrante(item) {
-    const { nome, cargo, rm, descricao, imagem } = item.dataset;
+    const { nome, cargo, rm, descricao, imagem, turma, links } = item.dataset;
 
     imagemDetalhe.src = imagem;
     imagemDetalhe.alt = `Foto de ${nome}`;
     nomeDetalhe.textContent = nome;
     cargoDetalhe.textContent = cargo;
     rmDetalhe.textContent = `RM: ${rm}`;
+    turmaDetalhe.textContent = `Turma: ${turma}`;
+    linksDetalhe.innerHTML = links;
     descricaoDetalhe.textContent = descricao;
 
     secaoDetalhes.classList.add('ativo');
