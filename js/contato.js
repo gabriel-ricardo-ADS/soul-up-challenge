@@ -1,19 +1,32 @@
-const form = document.querySelector('.contact-form');
+const formularioContato = document.querySelector('.contact-form');
+const mensagemFeedback = document.querySelector('#form-feedback');
 
-if (form) {
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
+if (formularioContato) {
+    formularioContato.addEventListener('submit', function (event) {
+        event.preventDefault();
 
-    const nome = form.nome.value.trim();
-    const email = form.email.value.trim();
-    const mensagem = form.mensagem.value.trim();
+        const nome = formularioContato.nome.value.trim();
+        const email = formularioContato.email.value.trim();
+        const mensagem = formularioContato.mensagem.value.trim();
 
-    if (nome === '' || email === '' || mensagem === '') {
-      alert('Preencha todos os campos antes de enviar.');
-      return;
-    }
+        if (nome === '' || email === '' || mensagem === '') {
+            mensagemFeedback.textContent = 'Preencha todos os campos antes de enviar.';
+            mensagemFeedback.classList.remove('success');
+            mensagemFeedback.classList.add('error');
+            return;
+        }
 
-    alert('Mensagem enviada com sucesso!');
-    form.reset();
-  });
+        if (!email.includes('@') || !email.includes('.')) {
+            mensagemFeedback.textContent = 'Digite um e-mail válido.';
+            mensagemFeedback.classList.remove('success');
+            mensagemFeedback.classList.add('error');
+            return;
+        }
+
+        mensagemFeedback.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato.';
+        mensagemFeedback.classList.remove('error');
+        mensagemFeedback.classList.add('success');
+
+        formularioContato.reset();
+    });
 }

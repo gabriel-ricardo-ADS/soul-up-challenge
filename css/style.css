@@ -961,3 +961,17 @@ footer {
 }
 
 
+/* ===================== Formulário ===================== */
+.form-feedback {
+    margin-top: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+}
+
+.form-feedback.success {
+    color: #7CFF9B;
+}
+
+.form-feedback.error {
+    color: #FF8A8A;
+}
