@@ -21,14 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
             menuButton.setAttribute('aria-expanded', 'true');
         };
 
-        const toggleMenu = (event) => {
+        menuButton.addEventListener('click', (event) => {
             event.preventDefault();
             event.stopPropagation();
             menu.classList.contains('is-open') ? closeMenu() : openMenu();
-        };
-
-        menuButton.addEventListener('click', toggleMenu);
-        menuButton.addEventListener('touchend', toggleMenu, { passive: false });
+        });
 
         menu.addEventListener('click', (event) => {
             if (event.target.closest('a')) closeMenu();

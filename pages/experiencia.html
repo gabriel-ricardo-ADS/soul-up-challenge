@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência | Soul UP</title>
+    <link rel="stylesheet" href="../css/lumen.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="layer-blur"></div>
+    <div class="conteiner">
+        <header>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-menu" id="menu-principal" aria-label="Menu principal">
+                <a href="../index.html">INÍCIO</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="solucao.html">SOLUÇÃO</a>
+                <a href="experiencia.html" class="active">EXPERIÊNCIA</a>
+                <a href="integrantes.html">INTEGRANTES</a>
+                <a href="contato.html">CONTATO</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
+
+            <a href="login.html" class="login-corner">LOGIN</a>
+        </header>
+
+        <main class="page-content prototype-page experience-page">
+            <section class="page-hero">
+                <span class="page-tag">Experiência interativa</span>
+                <h1>Receba sugestões da Lumën</h1>
+                <p>Escolha um perfil de usuário e veja a Lumën indicar ações para melhorar engajamento, clareza e retenção dentro da Soul UP.</p>
+            </section>
+
+            <section class="lumen-experience-stage" aria-label="Lumën sugerindo melhorias para a experiência do usuário">
+                <div class="lumen-assistant experience-lumen" aria-label="Assistente Lumën">
+                    <div class="lumen-bubble experience-bubble" aria-live="polite">
+                        <span class="mockup-label">Sugestão da Lumën</span>
+                        <h2 id="prototype-title">Onboarding guiado</h2>
+                        <p id="prototype-text" class="lumen-message">Para usuários novos, a melhor experiência começa com uma missão curta, explicação simples e feedback imediato sobre os pontos ganhos.</p>
+                    </div>
+
+                    <div class="lumen-mascot" aria-hidden="true">
+                        <div class="lumen-aura"></div>
+                        <div class="lumen-fire-hair">
+                            <span class="flame flame-left"></span>
+                            <span class="flame flame-main"></span>
+                            <span class="flame flame-right"></span>
+                            <span class="flame flame-core"></span>
+                        </div>
+                        <div class="lumen-arm"></div>
+                        <div class="lumen-head">
+                            <div class="lumen-face">
+                                <span class="lumen-eye"></span>
+                                <span class="lumen-eye"></span>
+                            </div>
+                            <div class="lumen-ear"></div>
+                        </div>
+                        <div class="lumen-body"></div>
+                    </div>
+                </div>
+
+                <div class="prototype-controls experience-controls" role="group" aria-label="Escolha o perfil de experiência">
+                    <button class="prototype-option active" type="button" data-profile="novo">Usuário novo</button>
+                    <button class="prototype-option" type="button" data-profile="engajado">Usuário engajado</button>
+                    <button class="prototype-option" type="button" data-profile="retorno">Usuário retornando</button>
+                    <button class="prototype-option" type="button" data-profile="baixo-engajamento">Baixo engajamento</button>
+                </div>
+
+                <article class="prototype-result experience-summary" aria-live="polite">
+                    <div class="prototype-score">
+                        <span>Impacto estimado na experiência</span>
+                        <strong id="prototype-score">60%</strong>
+                    </div>
+                    <div class="progress-track"><span id="prototype-bar" class="progress-fill--60"></span></div>
+                    <p id="prototype-detail">Foco em reduzir dúvida inicial, apresentar uma tarefa simples e criar sensação rápida de avanço.</p>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Soul UP - Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/effects.js"></script>
+    <script src="../js/prototipo.js"></script>
+</body>
+</html>

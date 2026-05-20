@@ -1,0 +1,58 @@
+Histórico de versionamento preservado antes da otimização do ZIP
+Gerado em: 2026-05-20
+
+Branches encontradas antes da limpeza:
+* main
+  rm573301
+  remotes/origin/main
+  remotes/origin/rm573301
+
+Autores identificados no histórico:
+Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com>
+DioohReis <diogo.dragons6541@gmail.com>
+LuizHenriqueAAlbarello <luizhenriquealvesalbarello@gmail.com>
+MatheusRodriguesSerrao <rmatheusrodrigues193@gmail.com>
+gabriel <gabrielrazod9j@gmail.com>
+gabriel-ricardo-ADS <gabrielricardoglima@gmail.com>
+
+Resumo dos commits:
+4486d6d | 2026-05-20 | DioohReis <diogo.dragons6541@gmail.com> | Remove imagens não utilizadas
+d034e2a | 2026-05-20 | Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com> | Merge pull request #9 from gabriel-ricardo-ADS/main
+c0b80ae | 2026-05-20 | gabriel-ricardo-ADS <gabrielricardoglima@gmail.com> | feat: aprimorando e alterando o sobre.html, e estilizando suas classes no style.css
+964fb3b | 2026-05-20 | gabriel-ricardo-ADS <gabrielricardoglima@gmail.com> | feat: melhorando formulário no contato.js e em seu style.css
+ae2dcfb | 2026-05-20 | gabriel-ricardo-ADS <gabrielricardoglima@gmail.com> | feat: crianção do readme.md
+32a1759 | 2026-05-20 | gabriel-ricardo-ADS <gabrielricardoglima@gmail.com> | feat: criando contato.js e arrumando seu html
+95132d2 | 2026-05-19 | DioohReis <diogo.dragons6541@gmail.com> | feat: Projeto atualizado com correções no style.css, apagando conflitos e codigos sem funcionalidade antigos, criado dois novos js no projeto, um para interações do menu, e o outro para os efeitos das paginas, criei o conteudo das paginas, faq, contato e sobre, arrumei o css do integrantes.
+a719e20 | 2026-05-19 | DioohReis <diogo.dragons6541@gmail.com> | feat: feito as alteraçoes, da pagina integrantes, e foi feito o link para o linkedin e o github com os devidos protocolos de segurança
+423a073 | 2026-05-13 | DioohReis <diogo.dragons6541@gmail.com> | feat: integrantes atualizado, criado uma interação com js para integrantes, atualizado o css e o html da pagina integrantes
+ba4bd09 | 2026-05-13 | DioohReis <diogo.dragons6541@gmail.com> | feat: tirei o css do lumen do style e e criei um proprio css para ele dentro da pasta css
+7a472ac | 2026-05-13 | DioohReis <diogo.dragons6541@gmail.com> | feat: deixei a barra de navegação trasparente, e atualizei umas coisas no no css
+a0fe6c3 | 2026-05-12 | DioohReis <diogo.dragons6541@gmail.com> | feat: criado o js do projeto, fiz um avatar em css e criei responsividade com js.
+1a61304 | 2026-05-12 | DioohReis <diogo.dragons6541@gmail.com> | feat: arrumando a responsividade para outros dispositivos
+755cb66 | 2026-05-04 | DioohReis <diogo.dragons6541@gmail.com> |     Merge branch 'main' of https://github.com/DioohReis/soul-up-challegen
+e044ad0 | 2026-05-04 | DioohReis <diogo.dragons6541@gmail.com> | feat: update background image and navigation links
+cc7f751 | 2026-05-04 | DioohReis <diogo.dragons6541@gmail.com> | feat: att imagem, e paginas
+c294b26 | 2026-05-04 | Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com> | Merge pull request #8 from gabriel-ricardo-ADS/rm572279
+5751e62 | 2026-05-04 | gabriel-ricardo-ADS <gabrielricardoglima@gmail.com> | feat: removendo botão e alinhando o cabeçalho
+9f013f9 | 2026-05-04 | Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com> | Merge pull request #7 from gabriel-ricardo-ADS/rm572279
+f6a4a92 | 2026-05-04 | gabriel-ricardo-ADS <gabrielricardoglima@gmail.com> | feat: adicionando @media aos dois arquivos css para até 1024px, 768px e 480px
+1a83a2f | 2026-05-04 | DioohReis <diogo.dragons6541@gmail.com> | feat: alterando o fundo da pagina inicial
+4317527 | 2026-04-30 | DioohReis <diogo.dragons6541@gmail.com> | feat: fotos de todos os integrantes do grupo esta okay
+e1e7e57 | 2026-04-30 | Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com> | Merge pull request #5 from LuizHenriqueAAlbarello/RM572727
+a4d9220 | 2026-04-30 | DioohReis <diogo.dragons6541@gmail.com> | feat: adicionando a foto do integrante Matheus na pagina integrantes
+f2d6fc1 | 2026-04-30 | Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com> | Merge pull request #6 from MatheusRodriguesSerrao/rm570469
+b50e061 | 2026-04-30 | MatheusRodriguesSerrao <rmatheusrodrigues193@gmail.com> | feat: adicionando imagem na pasta de fotos, integrante Matheus Rodrigues
+2e5b5e3 | 2026-04-30 | LuizHenriqueAAlbarello <luizhenriquealvesalbarello@gmail.com> | feat: Adicionado Foto Luiz
+0353e8a | 2026-04-29 | Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com> | Merge pull request #4 from gabriel-ricardo-ADS/rm572279
+07f4d99 | 2026-04-29 | gabriel-ricardo-ADS <gabrielricardoglima@gmail.com> | feat: montando estrutura no sobre.html para futuro preenchimento das informações
+85feb72 | 2026-04-29 | gabriel-ricardo-ADS <gabrielricardoglima@gmail.com> | feat: adicionando imagem do integrante Gabriel Ricardo, alterando texto da IA e data do rodapé
+88eb0a5 | 2026-04-29 | DioohReis <diogo.dragons6541@gmail.com> | feat: Iniciei a criação da pagina principal, coloquei uns elementos com css, para deixar mais dinamico e visual.
+5a0f76f | 2026-04-29 | Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com> | Merge pull request #2 from gabrielrazod9j-ops/rm572244
+4f4e754 | 2026-04-29 | Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com> | Merge branch 'main' into rm572244
+4da741e | 2026-04-29 | Diogo Guilherme de Assis Reis <121978315+DioohReis@users.noreply.github.com> | Merge pull request #3 from DioohReis/rm573301
+9a036be | 2026-04-29 | DioohReis <diogo.dragons6541@gmail.com> | feat: foi feito alguns testes, mas nenhuma atualização muito grande
+eb78c0a | 2026-04-29 | gabriel <gabrielrazod9j@gmail.com> | feat: adicionando a foto .jpg na pagina de integrantes do projeto
+0668718 | 2026-04-29 | gabriel <gabrielrazod9j@gmail.com> | feat: adicionando imagem na pasta de fotos
+9d74c43 | 2026-04-28 | DioohReis <diogo.dragons6541@gmail.com> | feat: criei o cabeçalho de todas as paginas, criei o css padrão das paginas e um css expecifico para integrantes
+74c527b | 2026-04-28 | DioohReis <diogo.dragons6541@gmail.com> | feat: criando as paginas obrigatorias do projeto.
+79f0ffd | 2026-04-28 | DioohReis <diogo.dragons6541@gmail.com> | feat: Criando as pastas dentro do projeto css, pages, js. E iniciando a criação da pagina inicial index.html

@@ -27,7 +27,7 @@
     transform: translateX(-50%);
 }
 
-.integrantes__texto h2 {
+.integrantes__texto h1 {
     margin-bottom: 0.5rem;
     font-family: var(--title-font);
     font-size: clamp(2rem, 5vw, 4rem);
@@ -43,6 +43,7 @@
 }
 
 .integrantes .slide {
+    --quantity: 5;
     position: absolute;
     top: 25%;
     left: calc(50% - 6.25rem);
@@ -57,6 +58,13 @@
 .integrantes .slide:hover {
     animation-play-state: paused;
 }
+
+
+.integrantes .slide .item--1 { --position: 1; }
+.integrantes .slide .item--2 { --position: 2; }
+.integrantes .slide .item--3 { --position: 3; }
+.integrantes .slide .item--4 { --position: 4; }
+.integrantes .slide .item--5 { --position: 5; }
 
 .integrantes .slide .item {
     position: absolute;
@@ -237,12 +245,20 @@
 
 @media (max-width: 1024px) {
     .integrantes .slide {
+    --quantity: 5;
         width: 10rem;
         height: 12.5rem;
         left: calc(50% - 5rem);
     }
 
-    .integrantes .slide .item {
+    
+.integrantes .slide .item--1 { --position: 1; }
+.integrantes .slide .item--2 { --position: 2; }
+.integrantes .slide .item--3 { --position: 3; }
+.integrantes .slide .item--4 { --position: 4; }
+.integrantes .slide .item--5 { --position: 5; }
+
+.integrantes .slide .item {
         transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(25rem);
     }
 }
@@ -258,13 +274,21 @@
     }
 
     .integrantes .slide {
+    --quantity: 5;
         width: 8rem;
         height: 10rem;
         left: calc(50% - 4rem);
         top: 35%;
     }
 
-    .integrantes .slide .item {
+    
+.integrantes .slide .item--1 { --position: 1; }
+.integrantes .slide .item--2 { --position: 2; }
+.integrantes .slide .item--3 { --position: 3; }
+.integrantes .slide .item--4 { --position: 4; }
+.integrantes .slide .item--5 { --position: 5; }
+
+.integrantes .slide .item {
         transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(16rem);
     }
 
@@ -284,13 +308,21 @@
 
 @media (max-width: 480px) {
     .integrantes .slide {
+    --quantity: 5;
         width: 6rem;
         height: 7.5rem;
         left: calc(50% - 3rem);
         top: 42%;
     }
 
-    .integrantes .slide .item {
+    
+.integrantes .slide .item--1 { --position: 1; }
+.integrantes .slide .item--2 { --position: 2; }
+.integrantes .slide .item--3 { --position: 3; }
+.integrantes .slide .item--4 { --position: 4; }
+.integrantes .slide .item--5 { --position: 5; }
+
+.integrantes .slide .item {
         transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(11rem);
     }
 

@@ -1,7 +1,7 @@
 const formularioContato = document.querySelector('.contact-form');
 const mensagemFeedback = document.querySelector('#form-feedback');
 
-if (formularioContato) {
+if (formularioContato && mensagemFeedback) {
     formularioContato.addEventListener('submit', function (event) {
         event.preventDefault();
 
@@ -26,7 +26,6 @@ if (formularioContato) {
         mensagemFeedback.textContent = 'Mensagem enviada com sucesso! Obrigado pelo contato.';
         mensagemFeedback.classList.remove('error');
         mensagemFeedback.classList.add('success');
-
         formularioContato.reset();
     });
 }

@@ -6,9 +6,6 @@
     <title>Contato | Soul UP</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
-
-<script src="../js/contato.js"></script>
-
 <body>
     <div class="layer-blur"></div>
 
@@ -22,50 +19,49 @@
             <nav class="main-menu" id="menu-principal" aria-label="Menu principal">
                 <a href="../index.html">INÍCIO</a>
                 <a href="sobre.html">SOBRE</a>
+                <a href="solucao.html">SOLUÇÃO</a>
+                <a href="experiencia.html">EXPERIÊNCIA</a>
                 <a href="integrantes.html">INTEGRANTES</a>
                 <a href="contato.html" class="active">CONTATO</a>
                 <a href="faq.html">FAQ</a>
             </nav>
+
+            <a href="login.html" class="login-corner">LOGIN</a>
         </header>
 
         <main class="contato page-content">
             <section class="page-hero">
                 <span class="page-tag">Fale conosco</span>
                 <h1>Entre em contato</h1>
-                <p>Tem dúvidas, sugestões ou quer entender melhor a proposta? Use os canais abaixo para falar com a equipe.</p>
+                <p>Use esta página para simular um canal de contato do projeto, com formulário validado por JavaScript e informações úteis para o usuário.</p>
             </section>
 
             <ul class="contato-lista" aria-label="Canais de contato">
                 <li><span class="contact-icon">@</span><strong>Email</strong><a href="mailto:contato@soulup.com">contato@soulup.com</a></li>
                 <li><span class="contact-icon">☎</span><strong>Telefone</strong><a href="tel:+551112345678">(11) 1234-5678</a></li>
-                <li><span class="contact-icon">⌖</span><strong>Endereço</strong><span>Rua Exemplo, 123 - São Paulo/SP</span></li>
+                <li><span class="contact-icon">⌖</span><strong>Endereço</strong><span>São Paulo/SP - FIAP Challenge</span></li>
             </ul>
 
-            <div class="cta-box">
-                <p>Nosso objetivo é deixar a experiência da Soul UP mais acessível, intuitiva e fácil de usar para todos os públicos.</p>
-            </div>
-
-            <form class="contact-form" action="#" method="post">
+            <form class="contact-form" action="#" method="post" novalidate>
                 <span class="form-tag">Contato direto</span>
                 <h2>Mensagem rápida</h2>
-                <p class="form-helper">Preencha as informações abaixo para simular uma área de contato mais clara e profissional.</p>
+                <p class="form-helper">Preencha os campos abaixo. O JavaScript valida os dados e exibe um feedback sem recarregar a página.</p>
                 <div class="form-grid">
                     <label class="form-field">
                         Nome
                         <input type="text" name="nome" placeholder="Digite seu nome" required>
                     </label>
-
                     <label class="form-field">
                         E-mail
                         <input type="email" name="email" placeholder="seuemail@exemplo.com" required>
                     </label>
-
                     <label class="form-field form-field--full">
                         Mensagem
                         <textarea name="mensagem" placeholder="Escreva sua dúvida ou sugestão aqui" required></textarea>
                     </label>
                 </div>
                 <button class="form-button" type="submit">Enviar mensagem</button>
+                <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
             </form>
         </main>
 

@@ -2,37 +2,25 @@
 
 Projeto desenvolvido para o Challenge 2026 da FIAP, na disciplina de Front-End Design Engineering, com base no desafio da plataforma SoulUp.
 
-## Sobre o projeto
+## Link do repositório
 
-O projeto **Lumen AI** apresenta uma proposta de avatar inteligente para a plataforma SoulUp, com o objetivo de tornar a experiência do usuário mais clara, interativa e motivadora.
-
-A ideia principal é criar uma interface que ajude o usuário a entender melhor missões, pontos, recompensas e ações sustentáveis dentro da plataforma. O avatar Lumen atua como um guia visual e informativo, facilitando a jornada do usuário e incentivando o engajamento contínuo com práticas sustentáveis.
+https://github.com/DioohReis/soul-up-challenge
 
 ## Desafio escolhido
 
 O grupo escolheu o **Desafio 3 - Avatar Inteligente e Interativo**.
 
-Esse desafio propõe a criação de uma solução capaz de guiar o usuário de forma personalizada dentro da plataforma, sugerindo ações, acompanhando progresso e tornando a experiência mais dinâmica.
+A proposta da **Lumen AI** é criar uma interface que ajude o usuário a entender missões, pontos, níveis, recompensas e próximos passos dentro da SoulUp. O avatar funciona como um guia visual e informativo para melhorar clareza, engajamento e retenção.
 
-## Objetivo da solução
+## Páginas do projeto
 
-O objetivo da Lumen AI é:
-
-- Ajudar o usuário a entender melhor a proposta da SoulUp;
-- Orientar a jornada do usuário dentro da plataforma;
-- Mostrar missões, pontos, níveis e progresso de forma visual;
-- Aumentar o engajamento por meio de uma experiência mais simples e intuitiva;
-- Apresentar uma base inicial para um futuro avatar com recursos de inteligência artificial.
-
-## Funcionalidades do site
-
-O projeto contém as seguintes páginas:
-
-- **Página Inicial**: apresentação da Lumen AI e da proposta principal do projeto;
-- **Sobre**: explicação do problema, solução, funcionamento e impacto esperado;
-- **Integrantes**: apresentação dos membros do grupo com foto, RM, turma, GitHub e LinkedIn;
-- **Contato**: área para simulação de contato com a equipe;
-- **FAQ**: perguntas frequentes sobre a proposta e funcionamento da Lumen AI.
+- **index.html** - apresentação inicial do projeto e acesso às principais seções;
+- **sobre.html** - contexto, problema, solução, tecnologias e roadmap;
+- **solucao.html** - demonstração objetiva de como a solução funciona;
+- **experiencia.html** - protótipo interativo com recomendações dinâmicas;
+- **integrantes.html** - equipe com nome, foto, RM, turma, GitHub e LinkedIn;
+- **contato.html** - formulário com validação em JavaScript;
+- **faq.html** - perguntas e respostas relevantes sobre o projeto.
 
 ## Tecnologias utilizadas
 
@@ -44,89 +32,74 @@ O projeto contém as seguintes páginas:
 
 ## Estrutura de pastas
 
-soul-up-challenge/
-│
+```text
+soul-up-challegen/
 ├── index.html
-│
 ├── css/
-│   └── Arquivos de estilização do projeto
-│
+│   ├── style.css
+│   ├── integrantes.css
+│   └── lumen.css
 ├── js/
-│   └── Arquivos JavaScript responsáveis por interatividade
-│
+│   ├── menu.js
+│   ├── effects.js
+│   ├── lumen.js
+│   ├── integrantes.js
+│   ├── contato.js
+│   ├── login.js
+│   └── prototipo.js
 ├── image/
-│   └── Imagens utilizadas no site
-│
-├── fonts/
-│   └── Fontes utilizadas no projeto
-│
 ├── pages/
 │   ├── sobre.html
+│   ├── solucao.html
+│   ├── experiencia.html
 │   ├── integrantes.html
 │   ├── contato.html
+│   ├── login.html
 │   └── faq.html
-│
 └── README.md
+```
 
-## Critérios atendidos
+## Critérios de Front-End atendidos
 
-O projeto busca atender aos principais critérios solicitados na disciplina de Front-End Design Engineering:
-
-- Estrutura de páginas obrigatórias;
-- Navegação entre páginas;
-- Uso de HTML semântico;
+- Estrutura semântica com HTML5;
 - Separação entre HTML, CSS e JavaScript;
-- Organização de arquivos em pastas;
-- Identidade visual relacionada à sustentabilidade e tecnologia;
-- Página de integrantes com informações da equipe;
+- Páginas obrigatórias implementadas;
+- Duas páginas dedicadas à solução;
+- Navegação por menu principal;
+- Layout responsivo para desktop, tablet e mobile;
 - Interatividade com JavaScript;
-- Projeto versionado no GitHub;
-- README.md com informações técnicas e descritivas.
-
-## Roadmap da solução
-
-Possíveis evoluções futuras da Lumen AI:
-
-1. Melhorar a validação do formulário de contato;
-2. Adicionar mais interações com o avatar;
-3. Criar sugestões personalizadas de missões sustentáveis;
-4. Integrar o avatar com dados reais do usuário;
-5. Evoluir a lógica para uso de inteligência artificial;
-6. Melhorar a acessibilidade e a experiência em dispositivos móveis.
-
-## Como executar o projeto
-
-1. Baixe ou clone este repositório:
-
-git clone https://github.com/gabriel-ricardo-ADS/soul-up-challenge.git
-
-2. Abra a pasta do projeto no VS Code.
-
-3. Abra o arquivo index.html no navegador.
-
-Também é possível usar a extensão Live Server no VS Code para visualizar o projeto localmente.
-
-## Link do repositório
-
-https://github.com/gabriel-ricardo-ADS/soul-up-challenge.git
+- Formulário com validação;
+- Página de integrantes com informações completas da equipe;
+- Organização de pastas e arquivos.
 
 ## Integrantes
 
-Grupo: Lumen AI
-
 | Nome | RM | Turma | GitHub | LinkedIn |
-| Diogo Guilherme | RM573301 | 1TDSPF | Adicionar link | Adicionar link |
-| Gabriel Ricardo | Adicionar RM | 1TDSPF | Adicionar link | Adicionar link |
-| Matheus Rodrigues | Adicionar RM | 1TDSPF | Adicionar link | Adicionar link |
-| Luiz Henrique | Adicionar RM | 1TDSPF | Adicionar link | Adicionar link |
-| Gabriel Razo | Adicionar RM | 1TDSPF | Adicionar link | Adicionar link |
+|---|---:|---|---|---|
+| Diogo Guilherme | 573301 | 1TDSPF | https://github.com/DioohReis | https://www.linkedin.com/in/diogo-guilherme-de-assis-reis-95b11624b/ |
+| Gabriel Ricardo | 573302 | 1TDSPF | https://github.com/gabriel-ricardo-ADS | https://www.linkedin.com/in/gabriel-ricardo-lima/ |
+| Matheus Rodrigues | 570469 | 1TDSPF | https://github.com/MatheusRodriguesSerrao | https://www.linkedin.com/in/matheusrodrigues |
+| Luiz Henrique | 572727 | 1TDSPF | https://github.com/LuizHenriqueAAlbarello | https://www.linkedin.com/in/luizhenrique |
+| Gabriel Razo | 572244 | 1TDSPF | https://github.com/gabrielrazod9j-ops | https://www.linkedin.com/in/razo |
 
-## Observação sobre o uso de IA
+## Como executar
 
-Ferramentas de inteligência artificial foram utilizadas como apoio para revisão, organização de ideias, estruturação textual e melhoria da documentação do projeto.
+1. Baixe ou clone o repositório.
+2. Abra a pasta no VS Code.
+3. Abra o arquivo `index.html` no navegador ou use a extensão Live Server.
 
-O conteúdo final foi adaptado e revisado pelo grupo, mantendo a proposta alinhada ao Challenge SoulUp e aos requisitos da disciplina.
-
-## Status do projeto
+## Status
 
 Projeto finalizado para entrega acadêmica do Challenge SoulUp nas sprints 1 e 2 - FIAP 2026.
+
+
+## Login demonstrativo
+
+O projeto possui uma página `pages/login.html` com autenticação simulada em JavaScript. Ao validar um usuário cadastrado, o nome é salvo no `localStorage` e exibido no balão da Lumën na página Experiência.
+
+
+## Otimização para entrega
+
+O projeto foi revisado para reduzir o tamanho do arquivo `.zip` sem comprometer a interface. Foram removidas mídias não utilizadas, as imagens ativas foram comprimidas e o `fundo.gif` foi otimizado mantendo a animação de fundo.
+
+O arquivo `GIT_HISTORICO.txt` registra as branches encontradas antes da limpeza e um resumo dos commits/autores para facilitar a conferência do versionamento.
