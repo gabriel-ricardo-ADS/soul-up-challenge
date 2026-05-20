@@ -6,6 +6,9 @@
     <title>Contato | Soul UP</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
+<script src="../js/contato.js"></script>
+
 <body>
     <div class="layer-blur"></div>
 
@@ -49,20 +52,20 @@
                 <div class="form-grid">
                     <label class="form-field">
                         Nome
-                        <input type="text" name="nome" placeholder="Digite seu nome">
+                        <input type="text" name="nome" placeholder="Digite seu nome" required>
                     </label>
 
                     <label class="form-field">
                         E-mail
-                        <input type="email" name="email" placeholder="seuemail@exemplo.com">
+                        <input type="email" name="email" placeholder="seuemail@exemplo.com" required>
                     </label>
 
                     <label class="form-field form-field--full">
                         Mensagem
-                        <textarea name="mensagem" placeholder="Escreva sua dúvida ou sugestão aqui"></textarea>
+                        <textarea name="mensagem" placeholder="Escreva sua dúvida ou sugestão aqui" required></textarea>
                     </label>
                 </div>
-                <button class="form-button" type="button">Enviar mensagem</button>
+                <button class="form-button" type="submit">Enviar mensagem</button>
             </form>
         </main>
 
