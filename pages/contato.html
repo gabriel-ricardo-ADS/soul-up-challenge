@@ -3,36 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soul UP</title>
+    <title>Contato | Soul UP</title>
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
-        <div class="layer-blur"></div>
+    <div class="layer-blur"></div>
 
     <div class="conteiner">
         <header>
-        <h1 class="logo">LUMEN.AI</h1> 
-        <nav>
-            <a href="../index.html">INÍCIO</a>
-            <a href="sobre.html">SOBRE</a>
-            <a href="integrantes.html">INTEGRANTES</a>
-            <a href="#">CONTATO</a>
-            
-            <a href="faq.html">FAQ</a>
-        </nav>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-menu" id="menu-principal" aria-label="Menu principal">
+                <a href="../index.html">INÍCIO</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="integrantes.html">INTEGRANTES</a>
+                <a href="contato.html" class="active">CONTATO</a>
+                <a href="faq.html">FAQ</a>
+            </nav>
         </header>
+
+        <main class="contato page-content">
+            <section class="page-hero">
+                <span class="page-tag">Fale conosco</span>
+                <h1>Entre em contato</h1>
+                <p>Tem dúvidas, sugestões ou quer entender melhor a proposta? Use os canais abaixo para falar com a equipe.</p>
+            </section>
+
+            <ul class="contato-lista" aria-label="Canais de contato">
+                <li><span class="contact-icon">@</span><strong>Email</strong><a href="mailto:contato@soulup.com">contato@soulup.com</a></li>
+                <li><span class="contact-icon">☎</span><strong>Telefone</strong><a href="tel:+551112345678">(11) 1234-5678</a></li>
+                <li><span class="contact-icon">⌖</span><strong>Endereço</strong><span>Rua Exemplo, 123 - São Paulo/SP</span></li>
+            </ul>
+
+            <div class="cta-box">
+                <p>Nosso objetivo é deixar a experiência da Soul UP mais acessível, intuitiva e fácil de usar para todos os públicos.</p>
+            </div>
+
+            <form class="contact-form" action="#" method="post">
+                <span class="form-tag">Contato direto</span>
+                <h2>Mensagem rápida</h2>
+                <p class="form-helper">Preencha as informações abaixo para simular uma área de contato mais clara e profissional.</p>
+                <div class="form-grid">
+                    <label class="form-field">
+                        Nome
+                        <input type="text" name="nome" placeholder="Digite seu nome">
+                    </label>
+
+                    <label class="form-field">
+                        E-mail
+                        <input type="email" name="email" placeholder="seuemail@exemplo.com">
+                    </label>
+
+                    <label class="form-field form-field--full">
+                        Mensagem
+                        <textarea name="mensagem" placeholder="Escreva sua dúvida ou sugestão aqui"></textarea>
+                    </label>
+                </div>
+                <button class="form-button" type="button">Enviar mensagem</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>© 2026 Soul UP - Todos os direitos reservados</p>
+        </footer>
     </div>
-    <div class="contato">
-        <h2>Entre em contato conosco!</h2>
-        <p>Se você tiver alguma dúvida, sugestão ou quiser saber mais sobre o nosso projeto, não hesite em nos contatar. Estamos sempre abertos a ouvir suas opiniões e responder às suas perguntas.</p>
-        <p>Você pode entrar em contato conosco através dos seguintes canais:</p>
-        <ul>
-            <li>Email: contato@soulup.com</li>
-            <li>Telefone: (11) 1234-5678</li>
-            <li>Endereço: Rua Exemplo, 123 - São Paulo/SP</li>
-        </ul>
-    </div>
-    
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/effects.js"></script>
 </body>
 </html>

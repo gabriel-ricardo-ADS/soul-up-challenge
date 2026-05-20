@@ -3,92 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Lumen IA</title>
+    <title>Sobre | Soul UP</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-
     <div class="layer-blur"></div>
 
     <div class="conteiner">
         <header>
-            <h1 class="logo">LUMEN.AI</h1> 
-            <nav>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-menu" id="menu-principal" aria-label="Menu principal">
                 <a href="../index.html">INÍCIO</a>
-                <a href="sobre.html">SOBRE</a>
+                <a href="sobre.html" class="active">SOBRE</a>
                 <a href="integrantes.html">INTEGRANTES</a>
                 <a href="contato.html">CONTATO</a>
                 <a href="faq.html">FAQ</a>
             </nav>
         </header>
 
-        <main class="sobre">
-
-            <!-- INTRO -->
-            <section class="sobre-intro">
-                <h2>Lumen IA</h2>
-                <p>
-                    <!-- O que é a Lumen IA -->
-                </p>
+        <main class="sobre page-content">
+            <section class="page-hero">
+                <span class="page-tag">Sobre o projeto</span>
+                <h1>Lumen AI para Soul UP</h1>
+                <p>Uma experiência digital mais simples, clara e motivadora para aproximar usuários da gamificação sustentável.</p>
             </section>
 
-            <!-- CONTEXTO / EMPRESA -->
-            <section class="sobre-contexto">
-                <h2>Sobre a Soul UP</h2>
-                <p>
-                    <!-- Contexto da empresa e onde a IA entra -->
-                </p>
-            </section>
+            <div class="info-grid info-grid--featured">
+                <section class="info-card">
+                    <span class="info-icon">?</span>
+                    <h3>O problema</h3>
+                    <p>Quando a plataforma não explica bem missões, pontos e recompensas, o usuário perde interesse antes de perceber valor na experiência.</p>
+                </section>
 
-            <!-- PROBLEMA -->
-            <section class="sobre-problema">
-                <h2>O Problema</h2>
-                <p>
-                    <!-- Problema real (sustentabilidade + redes sociais) -->
-                </p>
-            </section>
+                <section class="info-card">
+                    <span class="info-icon">✦</span>
+                    <h3>Nossa solução</h3>
+                    <p>A Lumen AI guia a jornada com linguagem simples, feedback visual e recomendações claras para o próximo passo.</p>
+                </section>
 
-            <!-- SOLUÇÃO -->
-            <section class="sobre-solucao">
-                <h2>Nossa Solução</h2>
-                <p>
-                    <!-- Como a IA resolve -->
-                </p>
-            </section>
+                <section class="info-card">
+                    <span class="info-icon">↗</span>
+                    <h3>Como funciona</h3>
+                    <p>O usuário acompanha evolução, missões, pontos, níveis e recompensas em uma interface objetiva, visual e motivadora.</p>
+                </section>
 
-            <!-- COMO FUNCIONA -->
-            <section class="sobre-funcionamento">
-                <h2>Como Funciona</h2>
-                <ul>
-                    <li><!-- interação com usuário --></li>
-                    <li><!-- sugestões sustentáveis --></li>
-                    <li><!-- integração com redes sociais --></li>
-                </ul>
-            </section>
+                <section class="info-card">
+                    <span class="info-icon">✓</span>
+                    <h3>Impacto esperado</h3>
+                    <p>A proposta reduz dúvidas, aumenta retenção e torna a experiência sustentável mais acessível para diferentes públicos.</p>
+                </section>
+            </div>
 
-            <!-- TECNOLOGIA -->
-            <section class="sobre-tecnologia">
-                <h2>Tecnologia</h2>
-                <p>
-                    <!-- Python, lógica, etc -->
-                </p>
+            <section class="journey-panel" aria-label="Jornada do usuário">
+                <h2>Jornada simplificada</h2>
+                <div class="journey-steps">
+                    <article><strong>1</strong><span>Acessa</span><p>O usuário entende rapidamente o objetivo da plataforma.</p></article>
+                    <article><strong>2</strong><span>Realiza</span><p>Completa ações, tarefas e missões com orientação visual.</p></article>
+                    <article><strong>3</strong><span>Evolui</span><p>Recebe pontos, níveis, badges e recompensas.</p></article>
+                    <article><strong>4</strong><span>Retorna</span><p>Percebe valor e continua interagindo com a Soul UP.</p></article>
+                </div>
             </section>
-
-            <!-- IMPACTO -->
-            <section class="sobre-impacto">
-                <h2>Impacto</h2>
-                <p>
-                    <!-- impacto social/ambiental -->
-                </p>
-            </section>
-
         </main>
 
         <footer>
             <p>© 2026 Soul UP - Todos os direitos reservados</p>
         </footer>
-
     </div>
 
+    <script src="../js/menu.js"></script>
+    <script src="../js/effects.js"></script>
 </body>
 </html>

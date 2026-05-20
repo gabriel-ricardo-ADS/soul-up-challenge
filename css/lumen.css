@@ -1,4 +1,3 @@
-
 /* ===================== */
 /* MASCOTE LUMËN ANIMADO */
 /* HTML + CSS + JS PURO  */
@@ -381,14 +380,6 @@
 /* SECTION FINAL - LUMËN + APP     */
 /* Parallax com HTML/CSS/JS puro    */
 /* =============================== */
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    overflow-x: hidden;
-}
-
 .lumen-scroll-section {
     position: relative;
     min-height: 115vh;
@@ -628,3 +619,4 @@ body {
         min-height: auto;
     }
 }
+

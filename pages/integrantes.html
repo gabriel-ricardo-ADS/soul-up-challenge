@@ -14,11 +14,15 @@
 
     <div class="conteiner">
         <header>
-            <h1 class="logo">LUMEN.AI</h1>
-            <nav>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-menu" id="menu-principal" aria-label="Menu principal">
                 <a href="../index.html">INÍCIO</a>
                 <a href="sobre.html">SOBRE</a>
-                <a href="#">INTEGRANTES</a>
+                <a href="integrantes.html" class="active">INTEGRANTES</a>
                 <a href="contato.html">CONTATO</a>
                 <a href="faq.html">FAQ</a>
             </nav>
@@ -34,7 +38,7 @@
                 <div class="slide" style="--quantity: 5" aria-label="Carrossel de integrantes">
                     <button class="item" type="button" style="--position: 1" data-nome="Diogo Guilherme"
                         data-cargo="Full-Stack Developer" data-rm="573301" data-turma="1TDSPF"
-                        data-links="<a href='https://github.com/DioohReis' target='_blank'>GitHub</a> | <a href='https://www.linkedin.com/in/diogo-guilherme-de-assis-reis-95b11624b/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>"
+                        data-github="https://github.com/DioohReis" data-linkedin="https://www.linkedin.com/in/diogo-guilherme-de-assis-reis-95b11624b/"
                         data-descricao="Diogo é responsável pelo desenvolvimento do frontend do projeto, cuidando da interface do usuário, garantindo que o design seja implementado de forma responsiva e acessível. "
                         data-imagem="../image/DiogoRM573301.jpg">
                         <img src="../image/DiogoRM573301.jpg" alt="Diogo Guilherme">
@@ -42,7 +46,7 @@
 
                     <button class="item" type="button" style="--position: 2" data-nome="Gabriel Ricardo"
                         data-cargo="Full-Stack Developer" data-rm="573302" data-turma="1TDSPF"
-                        data-links="<a href='https://github.com/gabriel-ricardo-ADS' target='_blank'>GitHub</a> | <a href='https://www.linkedin.com/in/gabriel-ricardo-lima/' target='_blank' rel='noopener noreferrer'>LinkedIn</a>"
+                        data-github="https://github.com/gabriel-ricardo-ADS" data-linkedin="https://www.linkedin.com/in/gabriel-ricardo-lima/"
                         data-descricao="Gabriel é responsável pelo desenvolvimento do backend, implementando funcionalidades e garantindo a integridade dos dados."
                         data-imagem="../image/Gabriel_Ricardo-01.jpeg">
                         <img src="../image/Gabriel_Ricardo-01.jpeg" alt="Gabriel Ricardo">
@@ -50,7 +54,7 @@
 
                     <button class="item" type="button" style="--position: 3" data-nome="Matheus Rodrigues"
                         data-cargo="Full-Stack Developer" data-rm="570469" data-turma="1TDSPF"
-                        data-links="<a href='https://github.com/MatheusRodriguesSerrao' target='_blank'>GitHub</a> | <a href='https://www.linkedin.com/in/matheusrodrigues' target='_blank' rel='noopener noreferrer'>LinkedIn</a>"
+                        data-github="https://github.com/MatheusRodriguesSerrao" data-linkedin="https://www.linkedin.com/in/matheusrodrigues"
                         data-descricao="Matheus é responsável pelo desenvolvimento do frontend, criando interfaces intuitivas e responsivas."
                         data-imagem="../image/Matheus_Rodrigues.jpeg">
                         <img src="../image/Matheus_Rodrigues.jpeg" alt="Matheus Rodrigues">
@@ -58,7 +62,7 @@
 
                     <button class="item" type="button" style="--position: 4" data-nome="Luiz Henrique"
                         data-cargo="Full-Stack Developer" data-rm="572727" data-turma="1TDSPF"
-                        data-links="<a href='https://github.com/LuizHenriqueAAlbarello' target='_blank'>GitHub</a> | <a href='https://www.linkedin.com/in/luizhenrique' target='_blank' rel='noopener noreferrer'>LinkedIn</a>"
+                        data-github="https://github.com/LuizHenriqueAAlbarello" data-linkedin="https://www.linkedin.com/in/luizhenrique"
                         data-descricao="Luiz é responsável pelo desenvolvimento do backend, implementando funcionalidades e garantindo a integridade dos dados."
                         data-imagem="../image/LuizHenrique572727.jpeg">
                         <img src="../image/LuizHenrique572727.jpeg" alt="Luiz Henrique">
@@ -66,7 +70,7 @@
 
                     <button class="item" type="button" style="--position: 5" data-nome="Razo"
                         data-cargo="Full-Stack Developer" data-rm="572244" data-turma="1TDSPF"
-                        data-links="<a href='https://github.com/gabrielrazod9j-ops' target='_blank'>GitHub</a> | <a href='https://www.linkedin.com/in/razo' target='_blank' rel='noopener noreferrer'>LinkedIn</a>"
+                        data-github="https://github.com/gabrielrazod9j-ops" data-linkedin="https://www.linkedin.com/in/razo"
                         data-descricao="Razo é responsável pelo desenvolvimento do frontend, criando interfaces intuitivas e responsivas."
                         data-imagem="../image/razo.01.jpeg">
                         <img src="../image/razo.01.jpeg" alt="Razo">
@@ -100,6 +104,8 @@
         </footer>
     </div>
 
+    <script src="../js/menu.js"></script>
+    <script src="../js/effects.js"></script>
     <script src="../js/integrantes.js"></script>
 </body>
 

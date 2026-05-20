@@ -3,24 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soul UP</title>
+    <title>FAQ | Soul UP</title>
     <link rel="stylesheet" href="../css/style.css">
-
 </head>
 <body>
-        <div class="layer-blur"></div>
+    <div class="layer-blur"></div>
 
     <div class="conteiner">
         <header>
-        <h1 class="logo">LUMEN.AI</h1> 
-        <nav>
-            <a href="../index.html">INÍCIO</a>
-            <a href="sobre.html">SOBRE</a>
-            <a href="integrantes.html">INTEGRANTES</a>
-            <a href="contato.html">CONTATO</a>
-            <a href="#">FAQ</a>
-        </nav>
+            <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-principal">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="main-menu" id="menu-principal" aria-label="Menu principal">
+                <a href="../index.html">INÍCIO</a>
+                <a href="sobre.html">SOBRE</a>
+                <a href="integrantes.html">INTEGRANTES</a>
+                <a href="contato.html">CONTATO</a>
+                <a href="faq.html" class="active">FAQ</a>
+            </nav>
         </header>
+
+        <main class="faq page-content">
+            <section class="page-hero">
+                <span class="page-tag">Perguntas frequentes</span>
+                <h1>Dúvidas rápidas</h1>
+                <p>Respostas simples para ajudar o usuário a entender melhor a proposta da plataforma.</p>
+            </section>
+
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary>O que é a Lumen AI?</summary>
+                    <p>É uma assistente digital criada para orientar o usuário dentro da experiência Soul UP, explicando missões, pontos e recompensas de forma mais clara.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Como o usuário ganha pontos?</summary>
+                    <p>O usuário acumula pontos ao realizar ações, cumprir tarefas e participar de missões propostas pela plataforma.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Por que usar gamificação?</summary>
+                    <p>A gamificação deixa a experiência mais motivadora, pois transforma tarefas em progresso, metas, níveis e recompensas.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>O projeto é acessível para iniciantes?</summary>
+                    <p>Sim. A proposta prioriza textos diretos, navegação simples, contraste visual e elementos fáceis de entender.</p>
+                </details>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2026 Soul UP - Todos os direitos reservados</p>
+        </footer>
     </div>
+
+    <script src="../js/menu.js"></script>
+    <script src="../js/effects.js"></script>
 </body>
 </html>

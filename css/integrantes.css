@@ -1,29 +1,39 @@
+/* =========================================================
+   Página Integrantes — CSS específico limpo
+   ========================================================= */
+
 .integrantes {
     position: relative;
     width: 100%;
-    height: 100vh;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
     overflow: hidden;
+    text-align: center;
 }
 
 .integrantes__texto {
     position: absolute;
     top: 6rem;
     left: 50%;
-    width: min(90%, 720px);
-    transform: translateX(-50%);
     z-index: 3;
+    width: min(90%, 720px);
+    padding: 1rem;
+    border: 1px solid rgba(196, 255, 246, 0.12);
+    border-radius: 24px;
+    background: rgba(0, 12, 10, 0.34);
+    backdrop-filter: blur(10px);
+    transform: translateX(-50%);
 }
 
 .integrantes__texto h2 {
     margin-bottom: 0.5rem;
+    font-family: var(--title-font);
     font-size: clamp(2rem, 5vw, 4rem);
     letter-spacing: 0.18rem;
     text-transform: uppercase;
+    animation: titleFloat 4.5s ease-in-out infinite, titleGlow 2.8s ease-in-out infinite alternate;
 }
 
 .integrantes__texto p {
@@ -32,30 +42,16 @@
     line-height: 1.6;
 }
 
-.integrantes .content {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: min(1400px, 100vw);
-    height: max-content;
-    padding-bottom: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .integrantes .slide {
     position: absolute;
     top: 25%;
+    left: calc(50% - 6.25rem);
+    z-index: 2;
     width: 12.5rem;
     height: 15.63rem;
-    left: calc(50% - 6.25rem);
     transform-style: preserve-3d;
     transform: perspective(62.5rem);
     animation: autoRun 20s linear infinite;
-    z-index: 2;
 }
 
 .integrantes .slide:hover {
@@ -66,29 +62,27 @@
     position: absolute;
     inset: 0;
     padding: 0;
-    border: 0;
+    overflow: hidden;
+    border: 1px solid rgba(196, 255, 246, 0.18);
     border-radius: 1rem;
     background: transparent;
     cursor: pointer;
-    overflow: hidden;
-    transform: rotateY(
-        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-    )
-    translateZ(35.38rem);
-    transition: filter 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 18px 46px rgba(0, 0, 0, 0.32);
+    transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(35.38rem);
+    transition: filter 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .integrantes .slide .item:hover,
 .integrantes .slide .item:focus-visible {
-    filter: brightness(1.16);
+    filter: brightness(1.12) saturate(1.05);
+    border-color: rgba(0, 247, 255, 0.55);
+    box-shadow: 0 0 34px rgba(0, 247, 255, 0.42);
     outline: none;
-    box-shadow: 0 0 28px rgba(255, 2, 2, 0.8);
 }
 
 .integrantes .slide .item img {
     width: 100%;
     height: 100%;
-    display: block;
     object-fit: cover;
 }
 
@@ -111,9 +105,9 @@
     gap: 2rem;
     align-items: center;
     padding: 2rem;
-    border: 1px solid rgba(2, 255, 87, 0.35);
+    border: 1px solid rgba(196, 255, 246, 0.2);
     border-radius: 1.5rem;
-    background: rgba(0, 20, 12, 0.76);
+    background: linear-gradient(145deg, rgba(0, 18, 16, 0.82), rgba(0, 8, 7, 0.68));
     box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
     backdrop-filter: blur(10px);
 }
@@ -134,8 +128,9 @@
     display: inline-block;
     margin-bottom: 1rem;
     padding: 0.35rem 0.75rem;
-    border: 1px solid rgba(2, 255, 87, 0.4);
+    border: 1px solid rgba(114, 255, 182, 0.42);
     border-radius: 999px;
+    background: rgba(0, 247, 255, 0.08);
     color: #d7ffe3;
     font-size: 0.8rem;
     letter-spacing: 0.08rem;
@@ -144,28 +139,100 @@
 
 .integrante-detalhes__conteudo h2 {
     margin-bottom: 0.75rem;
+    color: #fff;
     font-size: clamp(2rem, 4vw, 3.4rem);
 }
 
+.integrante-detalhes__turma,
 .integrante-detalhes__cargo,
 .integrante-detalhes__rm {
     margin-bottom: 0.6rem;
-    color: #d7ffe3;
+    color: #c8fff7;
     font-weight: 700;
 }
 
 .integrante-detalhes__conteudo p {
     max-width: 640px;
+    color: rgba(242, 255, 252, 0.82);
     line-height: 1.7;
 }
 
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+    margin-top: 1.25rem;
+}
+
+.social-link {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.8rem 1rem;
+    border: 1px solid rgba(111, 255, 240, 0.42);
+    border-radius: 999px;
+    background: linear-gradient(135deg, rgba(0, 247, 255, 0.16), rgba(114, 255, 182, 0.09));
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.social-link::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.18), transparent);
+    transform: translateX(-120%);
+    transition: transform 0.45s ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+    transform: translateY(-3px);
+    border-color: rgba(114, 255, 182, 0.68);
+    background: rgba(114, 255, 182, 0.14);
+    box-shadow: 0 16px 36px rgba(0, 247, 255, 0.16);
+    outline: none;
+}
+
+.social-link:hover::before,
+.social-link:focus-visible::before {
+    transform: translateX(120%);
+}
+
+.social-link span {
+    position: relative;
+    z-index: 1;
+}
+
+.social-link__icon {
+    width: 22px;
+    height: 22px;
+    display: inline-flex;
+}
+
+.social-link__icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.social-link--github:hover,
+.social-link--github:focus-visible {
+    border-color: rgba(255, 255, 255, 0.75);
+}
+
+.social-link--linkedin:hover,
+.social-link--linkedin:focus-visible {
+    border-color: rgba(0, 247, 255, 0.9);
+}
+
 @keyframes autoRun {
-    from {
-        transform: perspective(62.5rem) rotateX(-10deg) rotateY(0deg);
-    }
-    to {
-        transform: perspective(62.5rem) rotateX(-10deg) rotateY(360deg);
-    }
+    from { transform: perspective(62.5rem) rotateX(-10deg) rotateY(0deg); }
+    to { transform: perspective(62.5rem) rotateX(-10deg) rotateY(360deg); }
 }
 
 @media (max-width: 1024px) {
@@ -176,16 +243,7 @@
     }
 
     .integrantes .slide .item {
-        transform: rotateY(
-            calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-        )
-        translateZ(25rem);
-    }
-
-    .integrantes .content {
-        padding-bottom: 60px;
-        justify-content: center;
-        gap: 1.5rem;
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(25rem);
     }
 }
 
@@ -196,6 +254,7 @@
 
     .integrantes__texto {
         top: 4.5rem;
+        width: calc(100% - 1.5rem);
     }
 
     .integrantes .slide {
@@ -206,17 +265,7 @@
     }
 
     .integrantes .slide .item {
-        transform: rotateY(
-            calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-        )
-        translateZ(16rem);
-    }
-
-    .integrantes .content {
-        padding-bottom: 40px;
-        gap: 1rem;
-        flex-direction: column;
-        align-items: center;
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(16rem);
     }
 
     .integrante-detalhes__card {
@@ -228,12 +277,8 @@
     }
 
     @keyframes autoRun {
-        from {
-            transform: perspective(40rem) rotateX(-8deg) rotateY(0deg);
-        }
-        to {
-            transform: perspective(40rem) rotateX(-8deg) rotateY(360deg);
-        }
+        from { transform: perspective(40rem) rotateX(-8deg) rotateY(0deg); }
+        to { transform: perspective(40rem) rotateX(-8deg) rotateY(360deg); }
     }
 }
 
@@ -246,10 +291,7 @@
     }
 
     .integrantes .slide .item {
-        transform: rotateY(
-            calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
-        )
-        translateZ(11rem);
+        transform: rotateY(calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)) translateZ(11rem);
     }
 
     .integrante-detalhes__card {
@@ -261,11 +303,7 @@
     }
 
     @keyframes autoRun {
-        from {
-            transform: perspective(30rem) rotateX(-6deg) rotateY(0deg);
-        }
-        to {
-            transform: perspective(30rem) rotateX(-6deg) rotateY(360deg);
-        }
+        from { transform: perspective(30rem) rotateX(-6deg) rotateY(0deg); }
+        to { transform: perspective(30rem) rotateX(-6deg) rotateY(360deg); }
     }
 }
